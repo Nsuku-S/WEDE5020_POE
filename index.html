@@ -11,21 +11,26 @@
 <body>
 
     <!--Header section-->
-    <header>
+    <header class="site-header">
+        <div class="header-inner">
+            
         <!--Logo-->
         <div class="logo">
-            <img src="./assets/images/Logo.jpeg" alt="Main image" width="10%" height="10%">
+            <a href="./index.html">
+                <img src="./assets/images/Logo.jpeg" alt="Main image" width="10%" height="10%">
+            </a>
         </div>
         
          <!--Navigation links-->
          <nav class="main-navigation">
-            <a href="./index.html">HOME</a>
+            <a href="./index.html" class="active" aria-current="page">HOME</a>
             <a href="./pages/about-us.html">ABOUT US</a>
             <a href="./pages/contact-us.html">CONTACT US</a>
             <a href="./pages/enquiry.html">ENQUIRY</a>
             <a href="./pages/menu.html">MENU</a>
             <a href="./pages/services.html">SERVICES</a>
          </nav>
+         </div>
     </header>
 
     
@@ -36,9 +41,10 @@
         <section> 
           <!--Welcome message-->
 
-            <h1 style="text-align: center;">DUMI'S KITCHEN</h1>
-            <h2> Welcome to Dumi's Kitchen ! - Where every meal tells a story!</h2>
-
+            <section class="hero">
+                <h1>Welcome to Dumi's Kitchen</h1>
+                <h2>Where every meal tells a story!</h2>
+                <p>Experience the taste of authentic South African cuisine, crafted with love and tradition. From our legendary kotas to sizzling shisanyama, every dish is a celebration of flavor and culture.</p>
 
             <p>
                Authentic meals since 2021.
@@ -51,40 +57,90 @@
                 just feeding your hunger, you are connecting with the soul of South Africa
             </p>
 
+            <a href="./pages/menu.html" class="btn btn-primary">Explore Our Menu</a>
+            </section>
+
+            <div class="container">
+                <!--Why choose us-->
+                <section class="section">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <p class="intro-text">We are committed to providing the best South African cuisine with authentic flavors and a warm, inviting atmosphere.
+                        Here's what you can expect every time you visit Dumi's Kitchen:
+                    </p>
+
+                    <div class="card-grid">
+                        <div class="card">
+                            <h3>Authentic Recipes</h3>
+                            <p>Every dish follows a recipe handed from grandmother to mother to daughter, with no shrotcuts, just generations of know-how in every bite</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Fresh, Local Ingredients</h3>
+                            <p>We cook with what's fresh that day, sourced from local markets and farmers, so every plate tastes like it was made just for you.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>A Taste of Home</h3>
+                            <p>From our legendary kotas to sizzling shisanyama, every meal is cooked with the same love you'd find in a family kitchen.</p>
+                    </div>
+            </div>
+            </section>
+
+
             <!-- Web summary-->
-            <h2 style="text-align: center;">Visit Us!</h2>
-            <p>
-                Operating Hours:
-            </p>
-            <ul>
-                <li>Monday to Saturday 10:00 AM - 8:00 PM</li>
-            </ul> <br/><br/> <hr/>
+            <section class="section">
+                <h2 class="section-title">Visit Us!</h2>
 
-            <!--Loction details-->
-            <p>
-                Location:
-            </p>
-            <ul>
-                <li> Stand no. 15 Rwanda Village N'wamitwa, 0871</li>
-                <li>Google Maps: Dumi's Kitchen, N'wamitwa</li>
-            </ul> <br/><br/> <hr/>
+                <div class="card-grid">
+                    <!--Operating Hours-->
 
-            <!--Contact details-->
-            <p>
-                Contacts:
-            </p>
-            <ul>
-                <li>Call Us: (076)-467-7719</li>
-                <li>Text / WhatsApp: (063)-304-4774</li>
-                <li>Email: info@dumiskitchen.co.za</li>
-            </ul>
+                    <h3>Operating Hours</h3>
+                    <ul>
+                        <li>Monday to Saturday 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+
+                <!--Location details-->
+                <div class="card">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>Stand no. 15 Rwanda Village N'wamitwa, 0871</li>
+                        <li>Google Maps: Dumi's Kitchen, N'wamitwa</li>
+                    </ul>
+                </div>
+
+                <!--Contact details-->
+                <div class="card">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Call Us: (076)-467-7719</li>
+                        <li>Text Us: (063)-304-4774</li>
+                        <li>Email Us: info@dumiskitchen.co.za</li>
+                    </ul>
+                </div>
+
+            </section>
+           
+            <!--Closing call to action-->
+            <div class="cta-box">
+                <h2>Ready for a Taste of Home?</h2>
+                <p>Whether you're grabbing a quick kota on the go or planning a family feast, we've got you covered!</p>
+                <div class="btn-group">
+                    <a href="./pages/menu.html" class="btn btn-mustard">View Our Menu</a>
+                    <a href="./pages/contact-us.html" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+
         </section>
     </main>
 
     <!--Footer Section-->
-    <footer>
-        <h6>Dumi's Kitchen</h6>
-        <h6>&copy; 2023 Dumi's Kitchen. All rights reserved.</h6>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-brand">Dumi's Kitchen</p>
+            
+            <p>&copy; 2024 Dumi's Kitchen. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
