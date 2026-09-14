@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumi's Kitchen | About Us</title>
 
-    !-CSS Stylesheet-->
+    <!--CSS Stylesheet-->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
 </head>
 <body>
     
     <!--Header section-->
-    <header>
-        <!-- Logo section-->
-         <img src="../assets/images/Logo.jpeg" alt="Main image" width="10%" height="10%">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/Logo.jpeg" alt="Dumi's Kitchen Logo" width="10%" height="10%">
+            </a>
+        </div>
+        
+
          <!--Navigation links-->
          <nav>
             <a href="../index.html">HOME</a>
@@ -24,25 +30,33 @@
             <a href="./menu.html">MENU</a>
             <a href="./services.html">SERVICES</a>
          </nav>
+      </div>
     </header>
 
     <!--Main section-->
-    <main>
+    <main class="container">
 
-        <section>
+        <section class="section">
+          <h1 class="section-title">About Dumi's Kitchen</h1>
+          <p class="intro-text">Behind every kota and every plate of shisanyama is a story - one of family, heritage, and a small garage stall that grew into a home for the whole community.
+            Here's a little more about who are we are and why we do what we do. </p>
+          
           <!--Background story of our business-->
-            <h1 style="text-align: center;">Our Story</h1>
-            <p style="text-align: left;">
+            <div class="story-block"> 
+            <h1 class="section-title">Our Story</h1>
+            <p class="story-text">
                 Who exactly are we?
                 Founded in 2021 by Ms Dumisani Shipalana is Dumi's Kitchen, a well beloved local fast food establishment located
                 in the deep rural areas of N'wamitwa in Tzaneen, South Africa. It is well known for serving authentic, home-style
                 South African cuisine. The business started as a small garage stall selling food to locals and workers in the area and has now grown into a popular takeaway spot  known famousely for its juicy kotas and its mouth-watery shisanyama.
                 It now stands as people's most favoured shisanyama spot.
             </p>
+            </div>
 
             <!-- Mission and vision statements-->
-             <h1 style="text-align: center;"> Our Mission</h1>
-             <p style="text-align: left;">
+             <div class="story-block">  
+             <h1> Our Mission</h1>
+             <p class="text-left">
                 Our mission is to bring home to every customer, with food that is hearty, affotdable and made with love.
                 We are committed to preserving the rich culinary heritage of South Africa by using the traditional recipes that have been
                 passed down  through generations. Every ingridient we use is sourced fresh from local markets and farmers, ensuring that our meals 
@@ -52,36 +66,54 @@
                 our future.
              </p>
              <p> Every plate we serve is a promise - a promise of quality, heritage, and of love!</p>
+             </div>
 
              <!-- Vision statement-->
-              <h1 style="text-align: center;"> Our Vision</h1>
-              <p style="text-align: left;">
+              <div class="story-block">
+              <h1> Our Vision</h1>
+              <p class="text-left">
                 Our vision is to be the most recognised and trusted food brand in South Africa, celebrating our heritage through every meal we serve.
                 We envision a future where Ma Dumi's Kitchen is a household name across the country -  a symbol of authenticity, quality, and community
                 that resonates with people from all walks of life. We dream of a South Africa where our children are proud of their heritage, and
                 where the taste of a kota is as iconic as the sound of a vuvuzela.
               </p>
-              <p style="text-align: left;">
+              <p class="text-left"> 
                 We see a future where Dumi's Kitchen is not just a shisanyama but a cultural landmark -  a place where people come to
                 learn about South African cuisine, to celebrate their heritage, and to share meals with family and friends.
               </p>
+              </div>
 
               <!--Target audience-->
-              <h1 style="text-align: center;">Our Target audience</h1>
-              <p style="text-align: left;">
+              <div class="story-block">
+              <h1>Our Target audience</h1>
+              <p class="text-left">
                 Dumi's Kitchen serves a diverse and vibrant coomunity of customers who share a love for authentic South African food 
                 and genuine hospitality. Our target audience is broad, but we have identified several key groups who form the heart of our customer base:
               </p>
               <p>
                 Local community members, Working professionals, University students, Tourist and visitors, food enthusiasts, families as well as health-conscious diners.
               </p>
+              </div>
         </section>
+
+        <!--Call to Action-->
+        <div class="cta-box">
+            <h2> Come Be Part of Our Story! Come Taste the Difference!</h2>
+            <p>We invite you to visit Dumi's Kitchen and experience the taste of authentic South African cuisine. Whether you're a local resident, a tourist, or just passing through, we promise you a meal that is hearty, flavorful, and made with love.</p>
+            <div class="btn-group"> 
+                <a href="./menu.html" class="btn btn-primary">See Our Menu</a>
+                <a href="./contact-us.html" class="btn btn-secondary">Find Us</a>
+            </div>
+        </div>
     </main>
 
     <!--Footer Section-->
-    <footer>
-        <h6>Dumi's Kitchen</h6>
-        <h6>&copy; 2023 Dumi's Kitchen. All rights reserved.</h6>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Dumi's Kitchen</p>
+        
+        <p class="footer-copyright">&copy; 2023 Dumi's Kitchen. All rights reserved.</p>
+      </div>
     </footer>
 </body>
 </html>
