@@ -1,58 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/*Dumi's Kitchen stylesheet*/
 
-html {
-    scroll-behavior: smooth;
-}
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Karla:wght@400;500;600;700&display=swap');
 
-/* 1. body */
-body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+/* --- Design Tokens --- */
+:root {
+    /* Colors */
+    --color-charcoal: #241b16;
+    --color-charcoal-soft: #362a22;
+    --color-brick: #b23a2e;
+    --color-brick-dark: #8f2e24;
+    --color-mustard: #e2a63b;
+    --color-mustard-dark: #c2872a;
+    --color-sand: #f2e6d3;
+    --color-cream: #fffbf3;
+    --color-text: #2b2320;
+    --color-text-muted: #6b5c4f;
+    --color-border: #e2d3b8;
+    --color-focus: #1b6ea8;
 
-/* 2. header / navigation bar */ 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    top: 0%;
-    border: 1px solid #333;
-    z-index: 1000;
-}
-
-.logo {
-    margin-left: 1rem;
-}
-
-.main-navigation {
-    gap: 10px;
-    display: flex;
-}
-
-.main-navigation a {
-    color: white;
-    font-size: 16px;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.main-navigation a:hover {
-    background-color: #555;
-    color: white;
-}
-
-section {
-    padding: 2rem;
-    margin: 2rem 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    /* Type */
