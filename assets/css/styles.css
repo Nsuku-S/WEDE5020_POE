@@ -190,7 +190,9 @@
         border-bottom-color: var(--color-mustard);
     }
 
-    /* --- Hero (homepage) --- */
+    /*======================================================
+                 --- Hero (homepage) ---
+    ======================================================*/
 
     .hero {
         background: linear-gradient(160deg, var(--color-charcoal) 0%, var(--color-charcoal-soft) 100%);
@@ -199,4 +201,85 @@
         padding: var(--space-5) var(--space-2);
     }
 
+    .hero h1 {
+        color: var(--color-mustard);
+        letter-spacing: 0.03rem;
+    }
+
+    .hero h2 {
+        color: var(--color-cream);
+        font-weight: 500;
+        font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    }
     
+    .hero p {
+        max-width: 60ch;
+        margin-left: auto;
+        margin-right: auto;
+        color: #ece1d2;
+    }
+
+    .hero btn {
+        margin-top: var(--space-2);
+    }
+
+    /*=======================================================
+    Buttons
+    =========================================================*/
+
+    .btn {
+        display: inline block;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+        border-radius: var(--radius-sm);
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .btn-primary {
+        background-color: var(--color-brick);
+        color: var(--color-cream)
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible:focus-visible {
+        background-color: var(--color-brick-dark);
+        color: var(--color-cream);
+        transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        border-color: var(--color-cream);
+        color: var(--color-cream);
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+        background-color: var(--color-cream);
+        color: var(--color-charcoal);
+    }
+
+    .btn-reset:hover,
+    .btn-reset:focus-visible {
+        border-color: var(--color-brick);
+    }
+
+    .btn-mustard {
+        background-color: var(--color-mustard);
+        color: var(--color-charcoal);
+    }
+
+    .btn-mustard:hover,
+    .btn-mustard:focus-visible {
+        background-color: var(--color-mustard-dark);
+        color: var(--color-charcoal);
+        transform: translateY(-1px);
+    }
+
+    /*=========================================================
+    Call-to-action box
+    =========================================================== */
