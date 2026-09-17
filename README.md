@@ -102,12 +102,52 @@ underline), `::selection` (branded text-selection colour).
 - `@media (prefers-reduced-motion: reduce)` disables hover/scroll animations for users who've requested it
 - A single accessible Google Maps iframe with a descriptive `title` attribute
 
-## Known Fixes from Part 1
+# References
 
-See `CHANGELOG.md` for the full list of bugs found and corrected while
-integrating the stylesheet (broken iframe tag, invalid viewport meta,
-mismatched form label/id pairs, empty dropdown values, invalid button type,
-malformed HTML comments).
+The following sources informed the CSS techniques, typography and mapping
+resources used in this project (Harvard style).
+
+Google Fonts, 2024. *Fraunces*. [Online]
+Available at: https://fonts.google.com/specimen/Fraunces
+[Accessed 17 September 2026].
+
+Google Fonts, 2024. *Nunito Sans*. [Online]
+Available at: https://fonts.google.com/specimen/Nunito+Sans
+[Accessed 17 September 2026].
+
+Google Developers, 2024. *Google Maps Embed API*. [Online]
+Available at: https://developers.google.com/maps/documentation/embed/start
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. *CSS: Cascading Style Sheets*. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. *Using media queries*. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. *Pseudo-classes and pseudo-elements*. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. *CSS Grid Layout*. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+[Accessed 17 September 2026].
+
+W3Schools, 2024. *CSS Flexbox*. [Online]
+Available at: https://www.w3schools.com/css/css3_flexbox.asp
+[Accessed 17 September 2026].
+
+W3Schools, 2024. *CSS Media Queries*. [Online]
+Available at: https://www.w3schools.com/css/css3_pseudo_elements.asp
+[Accessed 17 September 2026].
+
+Keep a Changelog, 2024. *Keep a Changelog*. [Online]
+Available at: https://keepachangelog.com/
+[Accessed 17 September 2026].
+
+
 
 ## Author
 
