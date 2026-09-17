@@ -10,20 +10,20 @@ frameworks (no Bootstrap/Tailwind/React).
 
 ```
 dumis-kitchen/
-├── index.html                 Home page
-├── pages/
-│   ├── about-us.html          Our story, mission, vision, audience
-│   ├── contact-us.html        Contact details + embedded Google Map
-│   ├── enquiry.html           Enquiry form
-│   ├── menu.html              Mains, sides and drinks with prices
-│   └── services.html          Dine-in, catering, workshops
-├── assets/
-│   ├── css/
-│   │   └── styles.css         Single external stylesheet (all pages link here)
-│   └── images/                Logo + menu photography
-├── README.md                  This file
-├── CHANGELOG.md                Part 1 → Part 2 version history
-└── REFERENCES.md               Sources consulted (Harvard style)
+ index.html                 Home page
+pages/
+about-us.html          Our story, mission, vision, audience
+ contact-us.html        Contact details + embedded Google Map
+  enquiry.html           Enquiry form
+   menu.html              Mains, sides and drinks with prices
+    services.html          Dine-in, catering, workshops
+        assets/
+         css/
+          styles.css         Single external stylesheet (all pages link here)
+           images/                Logo + menu photography
+ README.md                  This file
+CHANGELOG.md                Part 1 → Part 2 version history
+ REFERENCES.md               Sources consulted (Harvard style)
 ```
 
 Every page links the same stylesheet, e.g.:
