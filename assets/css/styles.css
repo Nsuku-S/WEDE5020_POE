@@ -1,4 +1,3 @@
-/*Dumi's Kitchen stylesheet*/
 
 /* ==========================================================================
    Dumi's Kitchen — Stylesheet
@@ -29,7 +28,7 @@
 
   /* Type */
   --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Nunito Sans', Arial, sans-serif;
+  --font-body: 'Sana-serif', Arial, sans-serif;
 
   /* Spacing scale */
   --space-1: 0.5rem;
