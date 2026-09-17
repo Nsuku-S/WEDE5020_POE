@@ -514,3 +514,37 @@ textarea:focus-visible {
   color: #cfc2b1;
   margin: 0;
 }
+
+/* ==========================================================================
+   Responsive breakpoints
+   ========================================================================== */
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-navigation {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  .form-card {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 42px;
+  }
+
+  .main-navigation a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
