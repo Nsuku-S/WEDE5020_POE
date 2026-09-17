@@ -28,7 +28,7 @@
 
   /* Type */
   --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Sana-serif', Arial, sans-serif;
+  --font-body: 'Nunito Sans', Arial, sans-serif;
 
   /* Spacing scale */
   --space-1: 0.5rem;
@@ -278,7 +278,7 @@ textarea:focus-visible {
   position: relative;
   background:
     linear-gradient(160deg, rgba(36, 24, 17, 0.92) 0%, rgba(36, 24, 17, 0.85) 55%, rgba(214, 71, 46, 0.55) 100%),
-    url('../assets/images/WhatsApp Image 2026-08-13 at 20.27.47.jpeg') center / cover no-repeat;
+    url('../images/WhatsApp Image 2026-08-13 at 20.27.47.jpeg') center / cover no-repeat;
   color: var(--color-white);
   text-align: center;
   padding: var(--space-5) var(--space-2) calc(var(--space-5) + 2.5rem);
