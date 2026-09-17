@@ -148,3 +148,59 @@ textarea:focus-visible {
   text-align: center;
   color: var(--color-text-muted);
 }
+
+/* ==========================================================================
+   Header & navigation
+   ========================================================================== */
+.site-header {
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-1) var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  border-radius: var(--radius-sm);
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.main-navigation a {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+/* Hover / active feedback via colour only — never an underline */
+.main-navigation a:hover,
+.main-navigation a:focus-visible,
+.main-navigation a.active {
+  color: var(--color-primary);
+  text-decoration: none;
+}
