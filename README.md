@@ -119,6 +119,10 @@ Google Developers, 2024. *Google Maps Embed API*. [Online]
 Available at: https://developers.google.com/maps/documentation/embed/start
 [Accessed 17 September 2026].
 
+Keep a Changelog, 2024. *Keep a Changelog*. [Online]
+Available at: https://keepachangelog.com/
+[Accessed 17 September 2026].
+
 Mozilla Developer Network, 2024. *CSS: Cascading Style Sheets*. [Online]
 Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
 [Accessed 17 September 2026].
@@ -142,11 +146,6 @@ Available at: https://www.w3schools.com/css/css3_flexbox.asp
 W3Schools, 2024. *CSS Media Queries*. [Online]
 Available at: https://www.w3schools.com/css/css3_pseudo_elements.asp
 [Accessed 17 September 2026].
-
-Keep a Changelog, 2024. *Keep a Changelog*. [Online]
-Available at: https://keepachangelog.com/
-[Accessed 17 September 2026].
-
 
 
 ## Author
