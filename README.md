@@ -164,6 +164,12 @@ underline), `::selection` (branded text-selection colour).
 - `@media (prefers-reduced-motion: reduce)` disables hover/scroll animations for users who've requested it
 - A single accessible Google Maps iframe with a descriptive `title` attribute
 
+## Known fixes from part 1 & 2
+
+Full list of bugs found and corrected while intergarting the stylesheet (broken iframe tag, invalid viewport meta, mismatched
+form label/id pairs, empty breakdwon values, invalid button type, malformed HTML comments).
+Provided in the changelog.
+
 # References
 
 The following sources informed the CSS techniques, typography and mapping
