@@ -41,6 +41,23 @@
 
             <p class="section-blurb">From the legendary Fully Loaded Kota to a full plate that will have you loosening your belt, these dishes are surely the ones that put Dumi's Kitchen on the map.</p>
             
+            <!--Search and category filter-->
+            <div class="menu-controls">
+                <input type="search" id="menu-
+                 search" class="menu-search-input' placeholder="Search the menu..." aria-label="Search menu items">
+                <div class="filter-buttons" role="group" aria-label="Filter by category">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed=true"> All</button>
+
+                <button type="button" class="filter-btn' data-filter="mains" aria-pressed="false">Mains</button>
+
+                <button type="button" class="filter-btn' data-filter="sides" aria-pressed="false">Sides</button>
+
+                <button type="button" class="filter-btn' data-filter='drinks" aria-pressed="false">Drinks</button>
+            </div>
+            </div>
+
+            <p id="menu-empty-message" class="menu-empty-message">No dishes match your search - try a different term or filter.</p>
+
             <div class="menu-grid">
                 <div class="menu-item">
                     <img src="../assets/images/fully-loaded-kota.jpeg" alt="Fully Loaded Kota" width="20%" height="20%">
