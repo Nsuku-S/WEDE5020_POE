@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumi's Kitchen | Enquiry</title>
 
+    <!--Meta description for SEO-->
+    <meta name="description" content="Have a question about catering, services or Dumi's Kitchen? Send us an enquiry and we'll get back to you within 24 hours">
+
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
@@ -17,7 +20,7 @@
             <div class="logo">
                 <!--Logo-->
                 <a href="../index.html">
-                    <img src="../assets/images/Logo.jpeg" alt="Dumi's Kitchen Logo" width="10%" height="10%">
+                    <img src="../assets/images/Logo.jpeg" alt="Dumi's Kitchen Logo" class="logo-img">
                 </a>
             </div>
         
@@ -47,11 +50,10 @@
             for a hundred guests, we treat every message with the same care we put into every plate.
          </p>
         </section>
-         <br/><br/> <hr/>
 
         <!--Enquiry form-->
         <section class="section">
-            <h1 class="section-title">Enquiry Form</h1>
+            <h2 class="section-title">Enquiry Form</h2>
             <form action="#" method="post" class="form-card">
 
                 <div class="form-group">
@@ -60,38 +62,38 @@
                 </div>
 
                 <div class="form-group">
-                <label for="Email" name="Email">Email Address:</label><br/>
-                <input type="email" name="Email" placeholder="Give us your email address" required> <br/><br/>
+                <label for="email" name="Email">Email Address:</label><br/>
+                <input type="email" id="email" name="Email" placeholder="Give us your email address" required> 
                 </div>
  
                 <div class="form-group">
                 <label for="cellphone" name="cellphone">Cellphone Number:</label><br/>
-                <input type="tel" name="cellphone" placeholder="Where can we find you:" required> <br/><br/>
+                <input type="tel" id="cellphone" name="cellphone" placeholder="Where can we find you:" required> <br/><br/>
                 </div>
 
                 <div class="form-group">
                 <label for="Enquiry_type" name="Enquiry_type"> Enquiry Type:</label><br/>
                 <select id="Enquiry_type" name="Enquiry_type" required>
                     <option value="">-Select-</option>
-                    <option value="">-Meal Feedback-</option>
-                    <option value="">-Complaint-</option>
-                    <option value="">-Special Request-</option>
-                    <option value="">-Other-</option>
-                </select> <br/><br/>
+                    <option value="General Enquiry">-General Enquiry-</option>
+                    <option value="Meal Feedback">-Meal Feedback-</option>
+                    <option value="Complaint">-Complaint-</option>
+                    <option value="Special Request">-Special Request-</option>
+                    <option value="Other">-Other-</option>
+                </select> 
                 </div>
 
                 <div class="form-group">
                 <label for="contact-message" name="message"> Your Message:</label><br/>
-                <textarea name="message" id="contact-message" maxlength="500" placeholder="Please provide as much details as possible. 
-                            For catering, include the date, number of guests, and any requirements" required>
-                </textarea><br/><br/>
+                <textarea name="message" id="contact-message" maxlength="350" placeholder="..." required>
+                </textarea>
                 </div>
 
                 <!--Submit button-->
                 <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <!--Cancel option / button-->
-                <button type="reset" class="btn btn-secondary">Cancel</button>
+                <button type="reset" class="btn btn-outline">Cancel</button>
                 </div>
             </form>
         </section>
@@ -111,7 +113,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <p class="footer-brand">Dumi's Kitchen</p>
-            <p class="footer-copyright">&copy; 2021 Dumi's Kitchen. All rights reserved.</p>
+            <p class="footer-copyright">&copy; 2026 Dumi's Kitchen. All rights reserved.</p>
         </div>
     </footer>
 </body>
