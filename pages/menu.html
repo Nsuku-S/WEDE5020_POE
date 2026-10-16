@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumi's Kitchen | Menu</title>
 
+    <!--Meta description for SEO-->
+    <meta name="description" content="Browse the full Dumi's Kitchen menu - kotas, shisanyama plates, sides and drinks - with prices, fresh daily and made with love in N'wamitwa, Tzaneen.">
+
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
@@ -17,7 +20,7 @@
             <div class="logo">
                 <!--Logo-->
                 <a href="../index.html">
-                    <img src="../assets/images/Logo.jpeg" alt="Dumi's Kitchen Logo" width="10%" height="10%">
+                    <img src="../assets/images/Logo.jpeg" alt="Dumi's Kitchen Logo" class="logo-img">
                 </a>
             </div>
             <!--Navigation links-->
@@ -43,16 +46,13 @@
             
             <!--Search and category filter-->
             <div class="menu-controls">
-                <input type="search" id="menu-
-                 search" class="menu-search-input' placeholder="Search the menu..." aria-label="Search menu items">
+                <input type="search" id="menu-search" class="menu-search-input" placeholder="Search the menu..." aria-label="Search fmenu items">
                 <div class="filter-buttons" role="group" aria-label="Filter by category">
-                <button type="button" class="filter-btn active" data-filter="all" aria-pressed=true"> All</button>
-
-                <button type="button" class="filter-btn' data-filter="mains" aria-pressed="false">Mains</button>
-
-                <button type="button" class="filter-btn' data-filter="sides" aria-pressed="false">Sides</button>
-
-                <button type="button" class="filter-btn' data-filter='drinks" aria-pressed="false">Drinks</button>
+                
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-btn" data-filter="mains" aria-pressed="false">Mains</button>
+                    <button type="button" class="filter-btn" data-filter="sides" aria-pressed="false">Sides</button>
+                    <button type="button" class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
             </div>
             </div>
 
@@ -61,35 +61,35 @@
             <div class="menu-grid">
                 <div class="menu-item" data-category="mains">
                     <div class="menu-item-media"><img src="../assets/images/fully-loaded-kota.jpeg" alt="Fully Loaded Kota" width="20%" height="20%"></div>
-                    <div class="menu-item-body"><p style="text-align: left;">Fully Loaded Kota</p>
+                    <div class="menu-item-body"><p class="menu-item-name">Fully Loaded Kota</p>
                     <span class="menu-item-price">R70</span>
                 </div>
                 </div>
 
                 <div class="menu-item" data-category="mains">
                     <div class="menu-item-media"><img src="../assets/images/loade-kota.jpeg" alt="Loaded Kota" width="20%" height="20%"></div>
-                    <div class="menu-item-body"><p style="text-align:left;">Loaded Kota</p>
+                    <div class="menu-item-body"><p class="menu-item-name">Loaded Kota</p>
                     <span class="menu-item-price">R50</span>
                 </div>
                 </div>
 
                 <div class="menu-item" data-category="mains">
                      <div class="menu-item-media"></div><img src="../assets/images/juicy steak.jpeg" alt="Juicy Steak Full Plate" width="20%" height="20%"></div>
-                     <div class="menu-item-body"><p style="text-align: left;">Juicy Steak Full Plate</p>
+                     <div class="menu-item-body"><p class="menu-item-name">Juicy Steak Full Plate</p>
                      <span class="menu-item-price">R70</span>
                     </div>
                 </div>
 
                 <div class="menu-item" data-category="mains">
                     <div class="menu-item-media"><img src="../assets/images/fully-loaded-platter.jpeg" alt="Wors, Steak and Sides Full Plate" width="20%" height="20%"></div>
-                    <div class="menu-item-body"><p style="text-align: left;">Wors, Steak and Sides Full Plate</p>
+                    <div class="menu-item-body"><p class="menu-item-name">Wors, Steak and Sides Full Plate</p>
                     <span class="menu-item-price">R100</span>
                 </div>
                 </div>
 
                 <div class="menu-item" data-category="mains">
                     <div class="menu-item-media"><img src="../assets/images/fully-loaded-platter.jpeg" alt="Fully Loaded Platter" width="20%" height="20%"></div>
-                    <div class="menu-item-body"><p style="text-align: left;">Fully Loaded Platter</p>
+                    <div class="menu-item-body"><p class="menu-item-name">Fully Loaded Platter</p>
                     <span class="menu-item-price">R150</span>
                 </div>
                 </div>
@@ -182,18 +182,18 @@
             </div>
 
         </section>
-    </main>
 
     <!--Closing call to action-->
     <div class="cta-box">
         <h2>Can't Decide? Come Hungry, We'll Sort You Out!</h2>
         <p>Pop in, call ahead, or send us a message - however you order, we'll have something ready that hits the spot!</p>
-    </div>
 
     <div class="btn-group">
-        <a href="./enquiry.html" class="btn btn-mustard">Ask a Question</a>
-        <a href="./contact-us.html" class="btn btn-secondary">Visit Us Today</a>
+        <a href="./enquiry.html" class="btn btn-primary">Ask a Question</a>
+        <a href="./contact-us.html" class="btn btn-outline">Visit Us Today</a>
     </div>
+    </div>
+    </main>
 
 
     <!--Footer Section-->
