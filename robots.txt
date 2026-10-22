@@ -1,4 +1,4 @@
 User-agent:*
 Allow:/
 
-Sitemap:https://REPLACE-WITH-YOUR-LIVE-DOMAIN/sitemap.xml
+Sitemap:https://nsuku-s.github.io/WEDE5020_POE/
