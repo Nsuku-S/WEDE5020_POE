@@ -165,7 +165,14 @@ function initFaqAccordion() {
       var icon = btn.querySelector('.accordion-icon');
       var isOpen = answer.classList.contains('open');
 
-      answer.classList.toggle('open', !isOpen);
+      if (isOpen) {
+        answer.style.maxHeight = null;
+        answer.classList.remove('open');
+      } else {
+        answer.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+
       btn.setAttribute('aria-expanded', String(!isOpen));
       if (icon) icon.textContent = isOpen ? '+' : '\u2212';
     });
