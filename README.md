@@ -135,6 +135,18 @@ needed for that part.
 gradient nav-underline that animates in on hover, card lift-on-hover, and a
 diagonal `clip-path` on the hero section for a less "boxy" first impression.
 
+## JavaScript Features (Part 3)
+
+All JavaScript lives in assets/js/script.js, one shared file. Each feature
+checks for its own elements before attaching listeners, so it's safe to
+link from every page.
+
+Feature	            Page	            How it works
+Image lightbox  	menu.html	        Click a dish photo for an enlarged view; closes via button, outside click, or Escape
+Menu search & 
+category filter	    menu.html	        Live search by name + All/Mains/Sides/Drinks filter buttons, combinable
+FAQ accordion	    services.html	    Collapsible question/answer pairs with aria-expanded for accessibility
+
 ## Checklist Coverage
 
 | Focus Area | Where it's implemented |
@@ -193,6 +205,26 @@ Available at: https://keepachangelog.com/
 
 Mozilla Developer Network, 2024. *CSS: Cascading Style Sheets*. [Online]
 Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. Using media queries. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. Pseudo-classes and pseudo-elements. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. CSS Grid Layout. [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+[Accessed 17 September 2026].
+
+Mozilla Developer Network, 2024. Sending email from a web page (mailto). [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#sending_email_addresses
+[Accessed 7 October 2026].
+
+W3Schools, 2024. CSS Flexbox. [Online]
+Available at: https://www.w3schools.com/css/css3_flexbox.asp
 [Accessed 17 September 2026].
 
 Mozilla Developer Network, 2024. *Using media queries*. [Online]
