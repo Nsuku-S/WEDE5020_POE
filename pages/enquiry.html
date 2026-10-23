@@ -58,22 +58,28 @@
 
                 <div class="form-group">
                 <label for="name" name="name">Your Name:</label><br/>
-                <input type="text" id="name" placeholder="Tell us who you are" required> <br/><br/>
+                <input type="text" id="name" placeholder="Tell us who you are">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+                 <br/><br/>
                 </div>
 
                 <div class="form-group">
                 <label for="email" name="Email">Email Address:</label><br/>
-                <input type="email" id="email" name="Email" placeholder="Give us your email address" required> 
+                <input type="email" id="email" name="Email" placeholder="Give us your email address">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+                <br/><br/> 
                 </div>
  
                 <div class="form-group">
                 <label for="cellphone" name="cellphone">Cellphone Number:</label><br/>
-                <input type="tel" id="cellphone" name="cellphone" placeholder="Where can we find you:" required> <br/><br/>
+                <input type="tel" id="cellphone" name="cellphone" placeholder="Where can we find you:"> 
+                <span class="field-error" id="cellphone-error" aria-live="polite"></span>
+                <br/><br/>
                 </div>
 
                 <div class="form-group">
                 <label for="Enquiry_type" name="Enquiry_type"> Enquiry Type:</label><br/>
-                <select id="Enquiry_type" name="Enquiry_type" required>
+                <select id="Enquiry_type" name="Enquiry_type">
                     <option value="">-Select-</option>
                     <option value="General Enquiry">-General Enquiry-</option>
                     <option value="Meal Feedback">-Meal Feedback-</option>
@@ -85,7 +91,7 @@
 
                 <div class="form-group">
                 <label for="contact-message" name="message"> Your Message:</label><br/>
-                <textarea name="message" id="contact-message" maxlength="350" placeholder="..." required>
+                <textarea name="message" id="contact-message" maxlength="350" placeholder="...">
                 </textarea>
                 </div>
 
