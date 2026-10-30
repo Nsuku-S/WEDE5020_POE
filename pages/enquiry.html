@@ -7,7 +7,8 @@
 
     <!--Meta description for SEO-->
     <meta name="description" content="Have a question about catering, services or Dumi's Kitchen? Send us an enquiry and we'll get back to you within 24 hours">
-
+    <meta name="keywords" content="Dumi's Kitchen, Enquiry, Catering, Services, Questions, Contact Form, N'wamitwa, Tzaneen, South Africa">
+    
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
@@ -54,35 +55,32 @@
         <!--Enquiry form-->
         <section class="section">
             <h2 class="section-title">Enquiry Form</h2>
-            <form action="mailto:info@dumiskitchen.co.za?subject=Website%20Contact%20Message" 
-            method="post" 
-            enctype="text/plain" 
-            class="form-card">
+            <form id="enquiry-form" 
+            action="mailto:info@dumiskitchen.co.za?subject=Website%20Contact%20Message"
+            class="form-card" novalidate>
 
                 <div class="form-group">
                 <label for="name" name="name">Your Name:</label><br/>
                 <input type="text" id="name" placeholder="Tell us who you are">
                 <span class="field-error" id="name-error" aria-live="polite"></span>
-                 <br/><br/>
                 </div>
 
                 <div class="form-group">
-                <label for="email" name="Email">Email Address:</label><br/>
+                <label for="email" name="Email">Email Address:</label>
                 <input type="email" id="email" name="Email" placeholder="Give us your email address">
                 <span class="field-error" id="email-error" aria-live="polite"></span>
-                <br/><br/> 
                 </div>
  
                 <div class="form-group">
-                <label for="cellphone" name="cellphone">Cellphone Number:</label><br/>
+                <label for="cellphone" name="cellphone">Cellphone Number:</label>
                 <input type="tel" id="cellphone" name="cellphone" placeholder="Where can we find you:"> 
                 <span class="field-error" id="cellphone-error" aria-live="polite"></span>
-                <br/><br/>
                 </div>
 
                 <div class="form-group">
-                <label for="Enquiry_type" name="Enquiry_type"> Enquiry Type:</label><br/>
+                <label for="Enquiry_type" name="Enquiry_type"> Enquiry Type:</label>
                 <select id="Enquiry_type" name="Enquiry_type">
+                <span class="field-error" id="Enquiry_type-error" aria-live="polite"></span>
                     <option value="">-Select-</option>
                     <option value="General Enquiry">-General Enquiry-</option>
                     <option value="Meal Feedback">-Meal Feedback-</option>
@@ -93,9 +91,9 @@
                 </div>
 
                 <div class="form-group">
-                <label for="contact-message" name="message"> Your Message:</label><br/>
-                <textarea name="message" id="contact-message" maxlength="350" placeholder="...">
-                </textarea>
+                <label for="contact-message" name="message"> Your Message:</label>
+                <textarea name="message" id="contact-message" maxlength="350" placeholder="..."></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
                 </div>
 
                 <!--Submit button-->
@@ -104,7 +102,7 @@
                 <!--Cancel option / button-->
                 <button type="reset" class="btn btn-outline">Cancel</button>
                 </div>
-            </form noValidate>
+            </form>
         </section>
 
         <!--Form accompanying message-->
@@ -125,5 +123,8 @@
             <p class="footer-copyright">&copy; 2026 Dumi's Kitchen. All rights reserved.</p>
         </div>
     </footer>
+
+<script src="../assets/js/script.js"></script>
+
 </body>
 </html>
