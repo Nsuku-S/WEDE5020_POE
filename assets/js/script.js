@@ -5,13 +5,20 @@
    every page without throwing errors where a feature isn't used.
    ========================================================================== */
 
+
 document.addEventListener('DOMContentLoaded', function () {
-  renderMenuItems();       // must run before the lightbox/search features below
-  initMenuLightbox();
-  initMenuSearchAndFilter();
-  initFaqAccordion();
-  initFormValidation();
-  initDynamicFooterYear();
+  [
+    renderMenuItems,
+    initMenuLightbox,
+    initMenuSearchAndFilter,
+    initFaqAccordion,
+    initFormValidation,
+    initDynamicFooterYear,
+    initDateTime,
+    initAnimations
+  ].forEach(function (fn) {
+    try { fn(); } catch (err) { console.error(fn.name + ' failed:', err); }
+  });
 });
 
 /* ==========================================================================
@@ -161,10 +168,12 @@ function initFaqAccordion() {
 
   questions.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var answer = btn.nextElementSibling;
+      var item = btn.closest('.accordion-item') || btn.parentElement;
+      var answer = item.querySelector('.accordion-answer');
       var icon = btn.querySelector('.accordion-icon');
-      var isOpen = answer.classList.contains('open');
+      if (!answer) return;
 
+      var isOpen = answer.classList.contains('open');
       if (isOpen) {
         answer.style.maxHeight = null;
         answer.classList.remove('open');
@@ -423,4 +432,62 @@ function initDynamicFooterYear() {
     el.textContent = '\u00A9 ' + year + ' Dumi\'s Kitchen. All rights reserved.';
   });
 }
-                        
+         
+/* ---- Live date and time (updates every second) ---- */
+function initDateTime() {
+  var el = document.getElementById('live-datetime');
+  if (!el) return;
+
+  function update() {
+    var now = new Date();
+    var date = now.toLocaleDateString('en-ZA', {
+      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+    });
+    var time = now.toLocaleTimeString('en-ZA', {
+      hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+    });
+    el.textContent = date + ' | ' + time;
+  }
+
+  update();               // show immediately, no 1-second blank
+  setInterval(update, 1000);
+}
+
+/* ---- Scroll animations: fade-in on scroll + progress bar ---- */
+function initAnimations() {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  // Fade/slide elements in as they enter the screen
+  var targets = document.querySelectorAll(
+    '.section-title, .lead, .section-blurb, .card, .cta-box, .form-card, .menu-grid, .map-wrapper'
+  );
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    targets.forEach(function (el, i) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = (i % 3) * 0.12 + 's'; // small stagger
+      observer.observe(el);
+    });
+  }
+
+  // Scroll progress bar at the top of the page
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  document.body.appendChild(bar);
+
+  window.addEventListener('scroll', function () {
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+}
