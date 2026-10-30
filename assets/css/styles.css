@@ -596,3 +596,77 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   gap: 0.75rem;
   padding: 0.75rem 1rem;
 }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Page load fade-in */
+main { animation: pageFadeIn 0.8s ease both; }
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-fire));
+  z-index: 300;
+}
+
+/* Buttons lift and glow on hover */
+.btn { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -8px rgba(214, 71, 46, 0.55);
+}
+
+/* Respect people who turn animations off */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, main, .btn { animation: none; transition: none; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* Social icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  color: inherit;
+  opacity: 0.85;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+}
+
+.social-links svg { width: 18px; height: 18px; }
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-charcoal);
+  opacity: 1;
+  transform: translateY(-3px);
+}
