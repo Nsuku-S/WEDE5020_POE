@@ -435,7 +435,8 @@ W3Schools, 2024. *CSS Media Queries*. [Online]
 Available at: https://www.w3schools.com/css/css3_pseudo_elements.asp
 [Accessed 17 September 2026].
 
-
+<img src="./assets/images/Responsiveness.jpeg">
+<img src="./assets/images/TabletResponsiveness.jpeg"> 
 ## Author
 
 Nsuku Shipalana ST10516027
