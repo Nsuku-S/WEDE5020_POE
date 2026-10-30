@@ -183,6 +183,14 @@ function initFaqAccordion() {
 function initFormValidation() {
   initEnquiryForm();
   initContactForm();
+
+  document.querySelectorAll('form input, form select, form textarea').forEach(function (field) {
+    field.addEventListener('input', function () {
+      if (field.classList.contains('invalid') && field.value.trim() !== '') {
+        clearFieldError(field);
+      }
+    });
+  });
 }
 
 function showFieldError(input, message) {
@@ -232,6 +240,8 @@ function initContactForm()
     ok = validateField(email, isValidEmail, 'Enter a valid email address.') && ok;
     ok = validateField(phone, isValidPhone, 'Enter a valid phone number.') && ok;
     if (!ok) e.preventDefault();
+    var oldMsg = form.querySelector('.form-success');
+    if (oldMsg) oldMsg.remove();
   });
 }
 
