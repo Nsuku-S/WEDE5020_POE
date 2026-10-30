@@ -208,6 +208,33 @@ function isValidPhone(value) {
   return digits.length >= 9 && digits.length <= 12;
 }
 
+function validateField(input, rule, message) {
+  if (!rule(input.value.trim())) {
+    showFieldError(input, message);
+    return false;
+  }
+  clearFieldError(input);
+  return true;
+}
+
+function initContactForm() 
+{
+  var form = document.getElementById('contact-form'); // match your form's id
+  if (!form) return;
+
+  var name = document.getElementById('name');
+  var email = document.getElementById('email');
+  var phone = document.getElementById('phone');
+
+  form.addEventListener('submit', function (e) {
+    var ok = true;
+    ok = validateField(name, function (v) { return v.length >= 2; }, 'Please enter your name.') && ok;
+    ok = validateField(email, isValidEmail, 'Enter a valid email address.') && ok;
+    ok = validateField(phone, isValidPhone, 'Enter a valid phone number.') && ok;
+    if (!ok) e.preventDefault();
+  });
+}
+
 function showFormSuccess(form, message) {
   var existing = form.querySelector('.form-success');
   if (existing) existing.remove();
