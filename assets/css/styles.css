@@ -473,9 +473,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .form-actions { display: flex; gap: var(--space-2); flex-wrap: wrap; }
 
 /* Form validation states */
-.field-error { display: block; color: var(--color-fire); font-size: 0.85rem; font-weight: 700; margin-top: 0.35rem; min-height: 1.1em; }
-.form-group input.invalid, .form-group select.invalid, .form-group textarea.invalid { border-color: var(--color-fire); background-color: #fff3ef; }
-.form-success { background-color: var(--color-forest); color: var(--color-white); font-weight: 700; text-align: center; padding: var(--space-2); border-radius: var(--radius-sm); margin-top: var(--space-2); }
+.invalid { border: 2px solid #c0392b; }
+.field-error { color: #c0392b; font-size: 0.85rem; display: block; }
+.form-success {color: #1e7e34; font-weight: bold; margin-top: 1rem;}
 
 /* Map */
 .map-wrapper {
