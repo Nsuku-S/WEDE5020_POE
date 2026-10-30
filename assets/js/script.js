@@ -22,7 +22,7 @@ var menuData = {
   mains: [
     { name: "Fully Loaded Kota", price: "R70", img: "../assets/images/fully-loaded-kota.jpeg", alt: "Fully Loaded Kota" },
     { name: "Loaded Kota", price: "R50", img: "../assets/images/loade-kota.jpeg", alt: "Loaded Kota" },
-    { name: "Juicy Steak Full Plate", price: "R70", img: "../assets/images/juicy steak.jpeg", alt: "Juicy Steak Full Plate" },
+    { name: "Juicy Steak Full Plate", price: "R70", img: "../assets/images/juicy-steak.jpeg", alt: "Juicy Steak Full Plate" },
     { name: "Wors, Steak and Sides Full Plate", price: "R100", img: "../assets/images/fully-loaded-platter.jpeg", alt: "Wors, Steak and Sides Full Plate" },
     { name: "Fully Loaded Platter", price: "R150", img: "../assets/images/fully-loaded-platter.jpeg", alt: "Fully Loaded Platter" }
   ],
