@@ -230,9 +230,9 @@ function initContactForm()
   var form = document.getElementById('contact-form'); // match your form's id
   if (!form) return;
 
-  var name = document.getElementById('name');
-  var email = document.getElementById('email');
-  var phone = document.getElementById('phone');
+  var name = document.getElementById('contact-name');
+  var email = document.getElementById('contact-email');
+  var phone = document.getElementById('contact-phone');
 
   form.addEventListener('submit', function (e) {
     var ok = true;
